@@ -150,33 +150,3 @@ document.addEventListener('DOMContentLoaded', function () {
   typePhrase(); // Start the typing animation
 });
 
-
-
-// Ensure EmailJS script is loaded in your HTML file
-// <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-// Initialize EmailJS
-emailjs.init('starhadibwp'); // Replace with your EmailJS user ID
-
-// Handle form submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent default form submission
-  
-  // Gather the form data
-  var formData = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    phone: document.getElementById('phone').value,
-    message: document.getElementById('message').value,
-  };
-
-  // Send the email via EmailJS
-  emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData) // Replace with your service and template IDs
-    .then(function(response) {
-      alert('Message sent successfully!');
-      // Optionally reset the form
-      document.getElementById('contact-form').reset();
-    }, function(error) {
-      alert('Failed to send message. Please try again.');
-    });
-});

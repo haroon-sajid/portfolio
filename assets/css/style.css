@@ -281,27 +281,27 @@ body.active { overflow: hidden; }
 
 .static-text {
   color: #fff;
-  font-family: 'Pacifico', sans-serif; /* Font-family applied */
-  font-size: 3.2rem; /* Adjusted size for better balance */
-  font-weight: 700; /* Consistent font weight */
-  position: relative; /* Make sure it's not affected by the typing effect */
-  z-index: 1; /* Ensures it stays above the animated text */
+  font-family: 'Pacifico', sans-serif; 
+  font-size: 3.2rem;
+  font-weight: 700; 
+  position: relative;
+  z-index: 1; 
 }
 
 /* Typing text and caret effect */
 .typing-text {
   display: inline-block;
   color: #98FF98;
-  font-family: 'Pacifico', sans-serif; /* Added font-family */
-  font-size: 1.8rem; /* Slightly smaller size for contrast with static text */
-  font-weight: 800; /* Consistent font-weight */
-  border-right: 2px solid #98FF98; /* Caret effect */
+  font-family: 'Pacifico', sans-serif; 
+  font-size: 1.8rem; 
+  font-weight: 800; 
+  border-right: 2px solid #98FF98;
   white-space: nowrap;
   overflow: hidden;
-  animation: blink-caret 0.75s step-end infinite; /* Caret blinking animation */
-  text-decoration: underline; /* Adds underline to the text */
-  text-decoration-color: #98FF98; /* Matches the underline color to the text color */
-  text-decoration-thickness: 2px; /* Adjusts the underline thickness */
+  animation: blink-caret 0.75s step-end infinite; 
+  text-decoration: underline; 
+  text-decoration-color: #98FF98; 
+  text-decoration-thickness: 2px; 
 }
 
 
@@ -495,16 +495,16 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 
-main { 
-  overflow-x: hidden; 
+main {
+  overflow-x: hidden;
 }
 
 .hero {
   min-height: 100vh;
   display: flex;
-  flex-direction: row; /* Align text and image horizontally */
-  justify-content: flex-start; /* Align content to the left */
-  align-items: center; /* Vertically center */
+  flex-direction: row; /* Default for larger screens: horizontal alignment */
+  justify-content: flex-start;
+  align-items: center;
   padding-top: 115px;
   margin-bottom: var(--section-padding);
 }
@@ -514,11 +514,13 @@ main {
   width: 125%;
   margin-top: 50px;
   margin-bottom: 30px;
-  margin-right: 50px; 
+  margin-right: 50px;
   margin-left: 500px;
 }
 
-:is(.hero-social-list, .scroll-down) { display: none; }
+:is(.hero-social-list, .scroll-down) {
+  display: none;
+}
 
 .hero-content {
   max-width: 450px;
@@ -527,13 +529,44 @@ main {
 }
 
 .hero-title {
-  text-align: left; 
+  text-align: left;
   margin-bottom: 40px;
   position: relative;
 }
 
-.hero .btn-primary { 
-  margin-inline: right; 
+.hero .btn-primary {
+  margin-inline: right;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .hero-banner {
+    max-width: 100%; /* Adjust image size for mobile */
+    width: 90%;
+    margin: 0 auto 20px auto; /* Center the image */
+  }
+
+  .hero-content {
+    max-width: 90%;
+    text-align: center; /* Center text for mobile */
+    margin-top: 20px; /* Reset upward margin */
+    padding-left: 0;
+  }
+
+  .hero-title {
+    text-align: center; /* Center title */
+  }
+
+  .hero .btn-primary {
+    margin: 0 auto; /* Center button */
+  }
 }
 
 
