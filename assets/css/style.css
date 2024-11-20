@@ -279,6 +279,7 @@ body.active { overflow: hidden; }
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
+
 .static-text {
   color: #fff;
   font-family: 'Pacifico', sans-serif; 
@@ -292,7 +293,7 @@ body.active { overflow: hidden; }
 .typing-text {
   display: inline-block;
   color: #98FF98;
-  font-family: 'Pacifico', sans-serif; 
+  font-family: 'Pacifico ', sans-serif; 
   font-size: 1.8rem; 
   font-weight: 800; 
   border-right: 2px solid #98FF98;
@@ -561,6 +562,15 @@ main {
   }
 
   .hero-title {
+    text-align: left;
+    margin-bottom: 40px;
+    position: relative;
+  
+    /* Add font shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust shadow as needed */
+  }
+  
+  .hero-title {
     text-align: center; /* Center title */
   }
 
@@ -568,6 +578,7 @@ main {
     margin: 0 auto; /* Center button */
   }
 }
+
 
 
 /*-----------------------------------*\
@@ -924,7 +935,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding-inline: 40px;
+  
 }
 
 .contact-social-link {

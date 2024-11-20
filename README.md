@@ -9,7 +9,7 @@
 
   This website is fully responsive personal portfolio, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-  <a href="https://haroon-sajid.github.io/haroon-portfolio/"><strong>➥ Live Demo</strong></a>
+  <a href="https://haroon-sajid.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -27,13 +27,13 @@ To run **haroon-portfolio** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/haroon-sajid/haroon-portfolio.git
+sudo git clone https://github.com/haroon-sajid/portfolio.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/haroon-sajid/haroon-portfolio.git
+git clone https://github.com/haroon-sajid/portfolio.git
 ```
 
 ### Contact
