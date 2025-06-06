@@ -114,10 +114,10 @@ if (localStorage.getItem("theme") === "light_theme") {
 document.addEventListener('DOMContentLoaded', function () {
   const typingTextElement = document.querySelector('.typing-text');
   const phrases = [
-    'Data Science Enthusiast',
+    'AI Developer',
     'Machine Learning Explorer',
     'Python Developer',
-    'Data Analyst',
+    'Data Enthusiast',
   ];
   let currentPhraseIndex = 0;
   let charIndex = 0;
